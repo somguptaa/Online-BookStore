@@ -14,6 +14,7 @@ Future updates will include:
 ## Tech Stack
 - Java 21
 - Spring Boot 3.5.6
+- Oracle 21c
 - Maven
 - Spring Data JPA
 - REST APIs
@@ -21,5 +22,5 @@ Future updates will include:
 ## How to run
 1. Clone the repository: 
    ```bash
-   git clone https://github.com/somguptaa/Online-BookStore.git
+   https://github.com/somguptaa/Online-BookStore.git
 
