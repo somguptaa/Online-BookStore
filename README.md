@@ -1,6 +1,6 @@
 # Online-BookStore
 
-A production-ready **Spring Boot Online Bookstore Application** featuring:
+A fully functional **Spring Boot Online Bookstore Application** designed with enterprise-level architecture and real-world production features. It includes JWT authentication, dual database integration, file & Excel uploads, caching, circuit breaker, and modular components for Books, Cart, Orders, Ratings, and Customers.
 
 - **JWT Authentication & Authorization**
 - **Spring Cloud Config Server (Externalized Configuration)**
