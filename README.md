@@ -267,4 +267,4 @@ http://localhost:7071/swagger-ui.html
 - Admin Dashboard
 
 ## Licence
-- Released Under MIT Licence
+- Released Under <a href="https://github.com/somguptaa/Online-BookStore/blob/main/LICENSE"> MIT Licence </a>
