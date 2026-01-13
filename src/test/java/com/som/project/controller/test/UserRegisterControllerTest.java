@@ -37,15 +37,15 @@ public class UserRegisterControllerTest {
 
 		// 1️ Input data
 		UserRequestDto userRequest = new UserRequestDto();
-		userRequest.setEmail("vali@gmail.com");
-		userRequest.setFirstName("kamal");
-		userRequest.setLastName("kalyan");
+		userRequest.setEmail("som@gmail.com");
+		userRequest.setFirstName("Som");
+		userRequest.setLastName("Gupta");
 		userRequest.setPassword("pass@123");
 
 		// 2️ Mock service response
 		UserRegister mockResponse = new UserRegister();
 		mockResponse.setId(1L);
-		mockResponse.setEmail("shaik@gmail.com");
+		mockResponse.setEmail("gupta@gmail.com");
 
 		// 3️ Mock service call
 		when(userRegisterService.insertUserRegister(userRequest)).thenReturn(mockResponse);
@@ -63,13 +63,13 @@ public class UserRegisterControllerTest {
 
 		// input request
 		UserRegister list1 = new UserRegister();
-		list1.setFirstName("Sai");
-		list1.setLastName("Kamal");
-		list1.setEmail("abc@gmail.com");
+		list1.setFirstName("Akash");
+		list1.setLastName("Singh");
+		list1.setEmail("akash@gmail.com");
 
 		// input request
 		UserRegister list2 = new UserRegister();
-		list2.setLastName("hello");
+		list2.setLastName("agarwal");
 		list2.setEmail("xyz@gmail.com");
 
 		List<UserRegister> asList = Arrays.asList(list1, list2);
@@ -89,15 +89,15 @@ public class UserRegisterControllerTest {
 
 		// 1️ Input data
 		UserRequestDto userRequest = new UserRequestDto();
-		userRequest.setEmail("vali@gmail.com");
-		userRequest.setFirstName("kamal");
-		userRequest.setLastName("kalyan");
+		userRequest.setEmail("som@gmail.com");
+		userRequest.setFirstName("Som");
+		userRequest.setLastName("Gupta");
 		userRequest.setPassword("pass@123");
 
 		// 2️ Mock service response
 		UserRegister mockResponse = new UserRegister();
 		mockResponse.setId(1L);
-		mockResponse.setEmail("shaik@gmail.com");
+		mockResponse.setEmail("gupta@gmail.com");
 
 		// 3️ Mock service call
 		//when(userRegisterService.checkUserDetails(userRequest)).thenReturn(mockResponse);
