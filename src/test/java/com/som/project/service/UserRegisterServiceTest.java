@@ -33,17 +33,17 @@ public class UserRegisterServiceTest {
 
 		// Step 1: Create Input Data (like from Postman or frontend)
 		UserRequestDto input = new UserRequestDto();
-		input.setFirstName("Kamal");
-		input.setLastName("Kalyan");
-		input.setEmail("kamal@gmail.com");
+		input.setFirstName("Som");
+		input.setLastName("Gupta");
+		input.setEmail("som@gmail.com");
 		input.setPassword("pass@123");
 
 		// Step 2: Create Fake DB Output (as if user saved in DB)
 		UserRegister savedUser = new UserRegister();
 		savedUser.setId(1L);
-		savedUser.setFirstName("Srinu");
-		savedUser.setLastName("Lateesha");
-		savedUser.setEmail("gopi@gmail.com");
+		savedUser.setFirstName("Anshul");
+		savedUser.setLastName("Gupta");
+		savedUser.setEmail("Anshul@gmail.com");
 		savedUser.setPassword(Base64.getEncoder().encodeToString("pass@123".getBytes()));
 
 		when(userRegisterRepo.save(any(UserRegister.class))).thenReturn(savedUser);
@@ -53,8 +53,8 @@ public class UserRegisterServiceTest {
 
 		// Step 5: Check (Verify) output
 		assertNotNull(result); // result should not be null
-		assertEquals("Kamal", result.getFirstName());
-		assertEquals("kamal@gmail.com", result.getEmail());
+		assertEquals("Som", result.getFirstName());
+		assertEquals("som@gmail.com", result.getEmail());
 		// save() called only once
 		verify(userRegisterRepo, times(1)).save(any(UserRegister.class));
 	}
